@@ -12,8 +12,3 @@ class Solution:
                 continue
             return [index, mapped_index]
 
-
-if __name__ == "__main__":
-    solution = Solution()
-    ans = solution.twoSum([3, 3], 6)
-    print(ans)
