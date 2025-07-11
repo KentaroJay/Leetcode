@@ -1,22 +1,5 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        # abcabcbb
-        # ^       {a}
-        #  ^      {a,b}
-        #   ^     {a,b,c}
-        #    ^    {a}
-        #     ^   {a,b}
-        #      ^  {a,b,c}
-        #       ^ {b}
-        #        ^{b}
-        # abcadcbb
-        # ^^      {a,b}
-        # ^ ^     {a,b,c}
-        # ^  ^    {a,b,c}.set(a) error, compare with 0(initial) and memorize 3, move next to the index that a appears
-        #  ^ ^    {b,c,a}
-        #  ^  ^   {b,c,a,d}
-        #  ^   ^  {b,c,a,d}.set(c) error, compare with 3 and memorize 4, move next to the index that c appears
-        #    ^ ^  {a,d,c}
         if len(s) < 2:
             return len(s)
 
